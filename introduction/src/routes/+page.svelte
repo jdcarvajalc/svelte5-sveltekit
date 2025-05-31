@@ -1,15 +1,18 @@
 <!-- JS or TS -->
 <script lang="ts">
-    let word = $state('world')
+    let word = $state<string>('world');
+    let count = $state<number>(0);
 </script>
 
 <!-- Normal HTML -->
-<p>Hello {word}!</p>
-<button onclick={() => console.log('Button clicked')}>Click me</button>
+<h2>Hello {word}!</h2>
+<p>Why don't you try clicking on the button</p>
+<button onclick={() => {count++}}>Click me</button>
+<p>Button clicked {count} times</p>
 
 <!-- Normal css -->
 <style>
-    p{color: green;}
+    h2{color: green;}
     button{
          border: none;
   color: white;
