@@ -1,6 +1,6 @@
 <!-- JS or TS -->
 <script lang="ts">
-    let word = 'world'
+    let word = $state('world')
 </script>
 
 <!-- Normal HTML -->
