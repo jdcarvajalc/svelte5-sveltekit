@@ -1,5 +1,7 @@
-<!-- JS or TS -->
 <script lang="ts">
+    import GenericButton from "$lib/components/buttons/genericButton.svelte";
+    import SectionTitle from "$lib/components/sectionTitle/sectionTitle.svelte";
+
     let word = $state<string>('world');
     let count = $state<number>(0);
     
@@ -18,10 +20,7 @@
     }
 </script>
 
-<!-- Normal HTML -->
-<h2 class="text-green-700">Hello {word}!</h2>
-<button class="text-white my-1 mx-0.5 px-8 py-4 text-center bg-[#008CBA] cursor-pointer text-lg" onclick={onClick}>
-    Click me
-</button>
+<SectionTitle text={'Hello '+word+'!'} class={'text-green-700'} />
+<GenericButton text={'Click me'} class={'bg-[#008CBA] rounded-2xl'} {onClick}/>
 <p>{info}</p>
 
