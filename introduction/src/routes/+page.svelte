@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<!-- JS or TS -->
+<script lang="ts">
+    let word = 'world'
+</script>
+
+<!-- Normal HTML -->
+<p>Hello {word}!</p>
+
+<!-- Normal css -->
+<style>p{color: green;}</style>
