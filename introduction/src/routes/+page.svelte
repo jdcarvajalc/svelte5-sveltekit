@@ -5,24 +5,10 @@
 </script>
 
 <!-- Normal HTML -->
-<h2>Hello {word}!</h2>
+<h2 class="text-green-700">Hello {word}!</h2>
 <p>Why don't you try clicking on the button</p>
-<button onclick={() => {count++}}>Click me</button>
+<button class="text-white my-1 mx-0.5 px-8 py-4 text-center bg-[#008CBA] cursor-pointer text-lg" onclick={() => {count++}}>
+    Click me
+</button>
 <p>Button clicked {count} times</p>
 
-<!-- Normal css -->
-<style>
-    h2{color: green;}
-    button{
-         border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  background-color: #008CBA;
-    }
-</style>
